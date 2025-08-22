@@ -73,7 +73,7 @@ const foodItems = [
     price: 500,
     category: "Rice Dishes",
     available: false, // Set as unavailable for demo
-    imageUrl: "https://images.unsplash.com/photo-1594030580827-7cdc07c6e228?w=400"
+    imageUrl: "https://https://unsplash.com/photos/bowl-of-fried-rice-oT7_v-I0hHg"
   }
 ];
 
