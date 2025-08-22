@@ -1,0 +1,92 @@
+.order-status-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.order-status-card {
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.order-status-card h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.status-message {
+  color: #666;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.order-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.order-details h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.order-details p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.order-items {
+  margin-top: 15px;
+}
+
+.order-items h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.pickup-alert {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 20px;
+  color: #155724;
+}
+
+.pickup-alert strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pickup-alert p {
+  margin: 0;
+  font-size: 14px;
+}

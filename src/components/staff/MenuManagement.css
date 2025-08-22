@@ -1,0 +1,253 @@
+.menu-management {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.menu-management h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.category-filter button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.category-filter button:hover {
+  background: #f0f0f0;
+}
+
+.category-filter button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.menu-item-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.menu-item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.item-description {
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.item-price {
+  color: #667eea;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s;
+}
+
+.item-price:hover {
+  opacity: 0.8;
+}
+
+.edit-icon {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.item-price:hover .edit-icon {
+  opacity: 1;
+}
+
+.item-price-section {
+  margin: 10px 0;
+}
+
+.price-edit-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-edit-container span {
+  color: #667eea;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price-input {
+  width: 100px;
+  padding: 5px 8px;
+  border: 2px solid #667eea;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.price-input:focus {
+  outline: none;
+  border-color: #5566dd;
+}
+
+.price-edit-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.save-btn, .cancel-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+
+.item-category {
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+.availability-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.availability-status.available {
+  background: #d4edda;
+  color: #155724;
+}
+
+.availability-status.unavailable {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Toggle Switch Styles */
+.availability-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.availability-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.availability-switch input:checked + .slider {
+  background-color: #28a745;
+}
+
+.availability-switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.no-items {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+  font-size: 18px;
+}
