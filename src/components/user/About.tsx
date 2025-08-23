@@ -7,13 +7,13 @@ const About: React.FC = () => {
       <div className="about-container">
         <div className="about-header">
           <h2>About University Canteen</h2>
-          <p className="about-tagline">Serving Quality Food Since 1995</p>
+          {/* <p className="about-tagline">Serving Quality Food Since 1995</p> */}
         </div>
 
         <div className="about-intro">
           <p>
             Welcome to the University Canteen, your trusted partner for delicious and affordable meals on campus. 
-            We have been serving the university community for over 25 years, providing nutritious food options 
+            We have been serving the university community for over 6 years, providing nutritious food options 
             that fuel academic excellence.
           </p>
         </div>
@@ -36,12 +36,12 @@ const About: React.FC = () => {
             <h3>Quick Service</h3>
             <p>Fast preparation and serving times to fit your busy academic schedule. Order ahead through our app to save time.</p>
           </div>
-
+{/* 
           <div className="feature-card">
             <div className="feature-icon">🌱</div>
             <h3>Healthy Options</h3>
             <p>Variety of nutritious meals including vegetarian and balanced diet options to keep you healthy and energized.</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mission-vision">
@@ -68,7 +68,7 @@ const About: React.FC = () => {
           <h3>By the Numbers</h3>
           <div className="stats-grid">
             <div className="stat-card">
-              <div className="stat-number">25+</div>
+              <div className="stat-number">5+</div>
               <div className="stat-label">Years of Service</div>
             </div>
             <div className="stat-card">
