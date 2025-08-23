@@ -16,23 +16,29 @@ const About: React.FC = () => {
       </div>
 
       <div className="about-container">
-        {/* Introduction */}
-        <section className="intro-section">
-          <div className="section-content">
-            <h2 className="section-title">Welcome to Our Canteen</h2>
-            <div className="intro-text">
-              <p>
-                Welcome to the <strong>University Canteen</strong>, your trusted partner for 
-                delicious and affordable meals on campus. We have been serving the university 
-                community for over <strong>6 years</strong>, providing nutritious food options 
-                that fuel academic excellence.
-              </p>
-            </div>
+        <div className="about-header">
+          <h2>About University Canteen</h2>
+          {/* <p className="about-tagline">Serving Quality Food Since 1995</p> */}
+        </div>
+
+        <div className="about-intro">
+          <p>
+            Welcome to the University Canteen, your trusted partner for delicious and affordable meals on campus. 
+            We have been serving the university community for over 6 years, providing nutritious food options 
+            that fuel academic excellence.
+          </p>
+        </div>
+
+        <div className="about-features">
+          <div className="feature-card">
+            <div className="feature-icon">🍽️</div>
+            <h3>Quality Food</h3>
+            <p>Fresh ingredients sourced daily from trusted local suppliers. All meals prepared with care and attention to hygiene standards.</p>
           </div>
-        </section>
+        </div>
 
         {/* Features */}
-        <section className="features-section">
+        <div className="features-section">
           <div className="section-header">
             <h2 className="section-title">Why Choose Us</h2>
             <p className="section-subtitle">We're committed to excellence in campus dining</p>
@@ -71,36 +77,13 @@ const About: React.FC = () => {
               <p>Variety of nutritious meals including vegetarian and balanced diet options to keep you healthy and energized.</p>
             </div>
           </div>
-        </section>
-
-        {/* Mission & Vision */}
-        <section className="mission-vision-section">
-          <div className="mv-container">
-            <div className="mission-card">
-              <div className="mv-header">
-                <h3>Our Mission</h3>
-                <span className="mv-icon" role="img" aria-label="mission">🎯</span>
-              </div>
-              <p>
-                To provide the university community with affordable, nutritious, and delicious meals 
-                in a clean and welcoming environment, while maintaining the highest standards of 
-                food safety and customer service.
-              </p>
-            </div>
-            
-            <div className="vision-card">
-              <div className="mv-header">
-                <h3>Our Vision</h3>
-                <span className="mv-icon" role="img" aria-label="vision">🔭</span>
-              </div>
-              <p>
-                To be the preferred dining destination on campus, known for our quality, variety, 
-                and commitment to student satisfaction. We strive to create a space where students 
-                can enjoy great food and build lasting memories.
-              </p>
-            </div>
-          </div>
-        </section>
+{/* 
+          <div className="feature-card">
+            <div className="feature-icon">🌱</div>
+            <h3>Healthy Options</h3>
+            <p>Variety of nutritious meals including vegetarian and balanced diet options to keep you healthy and energized.</p>
+          </div> */}
+        </div>
 
         {/* Stats */}
         <section className="stats-section">
@@ -110,8 +93,8 @@ const About: React.FC = () => {
           </div>
           
           <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-number">10</div>
+            <div className="stat-card">
+              <div className="stat-number">5+</div>
               <div className="stat-label">Years of Service</div>
             </div>
             <div className="stat-item">
